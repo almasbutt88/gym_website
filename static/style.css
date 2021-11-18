@@ -1,0 +1,85 @@
+body {
+    background-image: url('https://d3h9ln6psucegz.cloudfront.net/wp-content/uploads/2017/11/6-Reasons-You-Should-Never-Open-a-Gym.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color:yellow;
+    background-image: linear-gradient();
+    opacity: 1;
+}
+
+
+#welcome {
+
+    margin: 50;
+    color:blue;
+    text-align: center;
+    border: 10px solid grey;
+    background-color: black;
+    opacity: 0.9;
+   
+}
+
+#nav_buttons >ul {
+    text-align: center;
+    list-style:none;
+    color:yellow;
+    background-color: black;
+    opacity: 0.9;
+}
+
+
+.class_list1 {
+
+    color:yellow;
+    background-color: black;
+    opacity: 0.9;
+    
+    list-style: none;
+    text-align: center;
+    border: 1px solid grey;
+}
+.class_details1{
+    color:yellow;
+    background-color: black;
+    list-style: none;
+    text-align: center;
+    border: 1px solid grey;    
+
+}
+
+#form1 {
+    text-align: center;
+    list-style:none;
+    color:yellow;
+    background-color: black;
+    opacity: 0.9;
+   
+}
+.members_list {
+
+    color:yellow;
+    background-color: black;
+    list-style: none;
+    text-align: center;
+    border: 1px solid grey;
+    opacity: 0.9;
+
+    
+
+}
+#bookings_list {
+    color:yellow;
+    background-color: black;
+    text-align: center;
+    opacity: 0.9;
+}
+
+#list1 {
+    list-style: none;
+    opacity: 0.9;
+}
+#members_list1 {
+    color:yellow;
+    background-color: blue;
+    opacity: 0.9;
+}

@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<nav class = "class_list1" >
+Please click on the class name to view class details:
+<ul class = "class_list1">
+    {% for class in class_list %}
+        <li> <a href="/classes/{{ class.id }}">{{class.name}}</a></li>
+    {% endfor %}
+</ul>
+</nav>
+{% endblock %}
+
+<nav>
+    <ul>
+    {% for member in members_list %}
+
+        <li class = "members_list">
+        {{ member.name }}
+        </li>
+    {% endfor %}
+    </ul>
+</nav>

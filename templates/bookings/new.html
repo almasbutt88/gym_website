@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<nav id="form1">
+Please complete the following form to make a booking:
+
+
+
+<form action="/bookings" method="post">
+    <div>
+        <label for="gym_class">Classes:</label>
+        <select name="gym_class" id="gym_class_id">
+            {% for gym_class in class_list %}
+            <option value="{{ gym_class.id }}">
+                {{ gym_class.name }}
+            </option>
+            {% endfor %}
+        </select>
+    </div>
+  
+    <div>
+        <label for="member_id">Member:</label>
+        <select name="member" id="member_id">
+            {% for member in members_list %}
+            <option value="{{ member.id }}">
+                {{ member.name }}
+            </option>
+            {% endfor %}
+        </select>
+    </div>
+    <button type="submit">Submit Booking Request Form</button>
+
+    <p>Disclaimer: Once you submit this form, you are entering into a legal agreement with YOUR GYM whereby failure to attend the class will carry a £20,000 fine, payable within 14 days to YOUR GYM.</p>
+  
+  </form>
+</nav>
+
+{% endblock %}

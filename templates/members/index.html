@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+<nav>
+    <ul>
+    {% for member in members_list %}
+
+        <li class = "members_list">
+        {{ member.name }}
+        </li>
+    {% endfor %}
+    </ul>
+</nav>
+{% endblock %}

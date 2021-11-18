@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+
+
+
+{% block content %}
+
+<nav id="bookings_list">
+<div>
+{% for booking in bookings %}
+<ul>
+{{booking.member.name}} has successfully booked {{booking.gym_class.name}}.
+
+
+</ul>
+{% endfor %}
+</div>
+
+<hr>
+
+{% endblock %}  

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Your Gym</title>
+   
+</head>
+<body>
+    <header>
+        <h1 id="welcome">Welcome to Your Gym</h1>
+        <nav id = "nav_buttons">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/classes">View Classes</a></li>
+                <li><a href="/bookings/new">Book Class</a></li>
+                <li><a href="/members">View Members</a></li>
+                <li><a href="/members/new">Sign-up New Member</a></li>
+            </ul>
+        </nav>
+    </header>
+    {% block content %} 
+
+
+
+
+    {% endblock %}
+</body>
+</html>

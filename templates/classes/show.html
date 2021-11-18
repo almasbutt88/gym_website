@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<nav class = "class_list1">
+Please click on the class name to view class details:
+<ul >
+   <li class = "class_details1"> Class Name: {{gym_class.name}}</li>
+   <li class = "class_details1"> Class Capacity: {{gym_class.capacity}} </li>
+    <li class = "class_details1">Remaining Spaces: {{gym_class.spaces}}</li>
+</ul>
+</nav>
+
+<nav>
+    <ul>
+    {% for member in members_list %}
+
+        <li class = "members_list">
+        {{ member.name }}
+        </li>
+    {% endfor %}
+    </ul>
+</nav>
+
+{% endblock %}
