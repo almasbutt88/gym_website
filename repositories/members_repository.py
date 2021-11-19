@@ -2,8 +2,8 @@ from db.run_sql import run_sql
 from models.members import Members
 
 def save(member):
-    sql = "INSERT INTO members (name, age) VALUES (%s, %s) RETURNING *"
-    values = [member.name, member.age]
+    sql = "INSERT INTO members (name, age, id) VALUES (%s, %s, %s) RETURNING *"
+    values = [member.name, member.age, member.id]
     results = run_sql(sql, values)
     id = results[0]['id']
     member.id = id
@@ -31,10 +31,6 @@ def select(id):
         member = Members(result['name'], result['age'], result['id'] )
     return member
 
-# def delete(id):
-#     sql = "DELETE  FROM members WHERE id = %s"
-#     values = [id]
-#     run_sql(sql, values)
 
 
 def update(members):

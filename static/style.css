@@ -11,7 +11,7 @@ body {
 #welcome {
 
     margin: 50;
-    color:blue;
+    color:yellow;
     text-align: center;
     border: 10px solid grey;
     background-color: black;
@@ -22,11 +22,18 @@ body {
 #nav_buttons >ul {
     text-align: center;
     list-style:none;
-    color:yellow;
+    color: yellow;
     background-color: black;
     opacity: 0.9;
 }
 
+#warning {
+    color:yellow;
+    background-color: black;
+    text-align: center;
+    
+    padding-top: 5%;
+}
 
 .class_list1 {
 

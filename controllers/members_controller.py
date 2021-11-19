@@ -24,11 +24,17 @@ def select(id):
     return render_template('/members/show.html', members_list = members_list, gym_class = gym_class)
 
 
-@members_blueprint.route("/members/new",  methods=['POST'])
+@members_blueprint.route("/members/new",  methods=['GET'])
 def create_member():
-    name = request.form['name']
-    age = request.form['age']
-    member = Members(name, age)
+    return render_template('/members/new.html')
+  
+  
+  
+  
+    # name = request.form['name']
+    # age = request.form['age']
+    # id = request.id['id']
+    # member = Members(name, age, id)
 
-    members_repository.save(member)
-    return redirect("/members")
+    # members_repository.save(member)
+    # return redirect("/members")
